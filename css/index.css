@@ -5,16 +5,25 @@
          position: absolute;
          bottom: 5px;
          right: 8px;
+         padding-bottom: 45px;
+         color: white;
+         text-shadow: px 2px 2px #777;
       }
       img {
          width: 100%;
          height: auto;
          opacity: 1.0;
-         
+         box-shadow: 0 7px 15px rgba(0,0,0,0.15), 0 11px 8px rgba(0,0,0,0.22);
+         box-sizing: border-box;
+         border: 2px #d3c8c8;
+         border-radius: 20px;
       }
 .card {
          box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
          box-sizing: border-box;
+         border: 2px #d3c8c8;
+         border-radius: 20px;
+         padding: 10px;
       }
 .card > p {
          font-family: sans-serif;
