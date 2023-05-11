@@ -70,3 +70,9 @@ body{
   margin:0;
   background-color:#f4f4f4;
 }
+div{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:20;
+  margin:20;
+  background-color:#f4f4f4;
+}
