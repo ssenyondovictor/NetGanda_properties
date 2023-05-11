@@ -42,8 +42,8 @@ footer{
   margin:auto;
   overflow:hidden;
 }
-h4{
+a{
   background-color: #f3eeee;
-  border: 5px;
+  border-radius: 5px;
   border-color: #b4a1a1;
 }
