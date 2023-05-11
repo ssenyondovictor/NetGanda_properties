@@ -16,6 +16,7 @@
          opacity: 1.0;
          border: 2px #d3c8c8;
          border-radius: 10px;
+         margin: 10px;
       }
 .card {
          box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
@@ -68,11 +69,5 @@ body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
-}
-div{
-  font: 15px/1.5 Arial, Helvetica,sans-serif;
-  padding:20;
-  margin:20;
   background-color:#f4f4f4;
 }
