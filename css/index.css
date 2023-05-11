@@ -65,3 +65,6 @@ header{
   min-height:70px;
   border-bottom:#e8491d 3px solid;
 }
+body{
+  padding: 0px;
+}
