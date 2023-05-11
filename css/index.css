@@ -30,3 +30,22 @@
          padding: 0px 10px 10px 10px;
          text-align: center;
       }
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
