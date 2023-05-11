@@ -56,4 +56,12 @@ a{
   padding-bottom: 2px;
   padding-left: 5px;
   padding-right: 5px;
+  color: #2b1515;
+}
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
 }
