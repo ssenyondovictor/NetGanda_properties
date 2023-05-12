@@ -14,12 +14,7 @@
          width: 100%;
          height: auto;
          opacity: 1.0;
-         border: 2px #d3c8c8;
          border-radius: 10px;
-         padding-bottom: 2px;
-         padding-top: 2px;
-         padding-left: 2px;
-         padding-right: 5px;
       }
 .card {
          box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
@@ -51,7 +46,7 @@ a:link {
 a:visited {
          text-decoration: none;
       }
-a{
+h4{
   background-color: #f3eeee;
   border-radius: 5px;
   border-color: #b4a1a1;
