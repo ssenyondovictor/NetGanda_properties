@@ -1,7 +1,8 @@
 img {
-         width: 100%;
+         max-width: 100%;
          height: auto;
          opacity: 1.0;
+         crop
       }
       * {
          box-sizing: border-box;
