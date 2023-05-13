@@ -20,6 +20,7 @@ img {
          height: 200px;
          background: lightgrey;
          border-right: 1px solid black;
+         padding-right: 3px;
       }
       .col-1 { width: 50% }
       .col-2 { width: 50% }
