@@ -17,6 +17,7 @@ img {
       }
       div[class*="col-"] {
          float: left;
+         width: 200px;
          height: 320px;
          padding-right: 3px;
          padding-left: 3px;
