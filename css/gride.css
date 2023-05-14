@@ -1,6 +1,6 @@
 img {
-         width: 190;
-         height: 290;
+         width: 100;
+         height: auto;
          opacity: 1.0;
       }
       * {
@@ -17,9 +17,9 @@ img {
       }
       div[class*="col-"] {
          float: left;
-         height: 350px;
-         padding-right: 3px;
-         padding-left: 3px;
+         height: auto;
+         padding-right: 0px;
+         padding-left: 0px;
          margin-bottom: 10px;
       }
       .col-1 { width: 50% }
