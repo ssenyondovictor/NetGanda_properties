@@ -1024,6 +1024,7 @@ ul {
 }
 .content__head1 {
   position: relative;
+  padding-top: 10px;
 }
 @media (min-width: 1200px) {
   .content__title {
