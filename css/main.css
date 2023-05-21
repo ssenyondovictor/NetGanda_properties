@@ -1023,7 +1023,7 @@ ul {
   }
 }
 .content__head1 {
-  display: block;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .content__title {
