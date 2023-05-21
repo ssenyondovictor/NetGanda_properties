@@ -1023,7 +1023,7 @@ ul {
   }
 }
 .content__head1{
-  padding-left: 10px;
+  margin-left: 10px;
 }
 @media (min-width: 1200px) {
   .content__title {
