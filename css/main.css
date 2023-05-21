@@ -1022,6 +1022,9 @@ ul {
     margin-bottom: 50px;
   }
 }
+.content__head1{
+  display: block;
+}
 @media (min-width: 1200px) {
   .content__title {
     font-size: 36px;
