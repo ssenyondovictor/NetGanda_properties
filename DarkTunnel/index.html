@@ -37,11 +37,41 @@
         .section h2 {
             color: #333;
         }
+        .plans {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .plan {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            box-sizing: border-box;
+        }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .plans .plan {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .plans .plan {
+                width: 100%;
+            }
         }
     </style>
 </head>
