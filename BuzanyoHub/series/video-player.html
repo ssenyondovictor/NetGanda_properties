@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Series</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Video Player Page Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .video-title {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .back-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background-color: #b20710;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="https://www.dropbox.com/scl/fi/jy8zfx6s5p5u7maypgt4v/eve-1.mp4?rlkey=ls4cevlbb9pxoiebg0ov626zr&amp;st=ebcl6wra&amp;raw=1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-title">
+            <h1>Series Title - Episode 1</h1>
+        </div>
+        <div class="back-button">
+            <a href="movie-details.html">← Back to Series</a>
+        </div>
+    </div>
+</body>
+</html>
