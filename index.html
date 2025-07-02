@@ -1,36 +1,87 @@
-<!-- filepath: GandaNet/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GandaNet - Average Product Prices</title>
-  <link rel="stylesheet" href="css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2065505664295811"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GandaNet – Know the True Price</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 <body>
-  <header>
-    <h1>GandaNet</h1>
-    <p>Your go-to source for average product prices.</p>
-  </header>
-  <main>
-    <section class="product-list">
-      <h2>Product Prices</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Average Price</th>
-          </tr>
-        </thead>
-        <tbody id="price-table-body">
-          <!-- Product prices will be dynamically inserted here -->
-        </tbody>
-      </table>
+    <!-- Header section with logo and title -->
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="GandaNet Logo" width="50" height="50">
+        </div>
+        <h1>GandaNet – Know the True Price</h1>
+    </header>
+
+    <!-- Search bar for finding items -->
+    <section class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for items..." onkeyup="searchCategories()" />
     </section>
-  </main>
-  <footer>
-    <p>Copyright 2023 GandaNet. All rights reserved.</p>
-  </footer>
-  <script src="js/script.js"></script>
+
+    <!-- Category icons section -->
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="category-icons" id="category-icons">
+            <a href="groceries.html" class="category" data-category="groceries">
+                <img src="img/groceries.webp" alt="Groceries" width="50" height="50">
+                <span>Groceries</span>
+            </a>
+            <a href="fuel.html" class="category" data-category="fuel">
+                <img src="img/fuel.jpg" alt="Fuel" width="50" height="50">
+                <span>Fuel</span>
+            </a>
+            <a href="electronics.html" class="category" data-category="electronics">
+                <img src="img/electronics.jpg" alt="Electronics" width="50" height="50">
+                <span>Electronics</span>
+            </a>
+            <a href="clothing.html" class="category" data-category="clothing">
+                <img src="img/clothing.jpg" alt="Clothing" width="50" height="50">
+                <span>Clothing</span>
+            </a>
+            <a href="household.html" class="category" data-category="household">
+                <img src="img/household.webp" alt="Household" width="50" height="50">
+                <span>Household</span>
+            </a>
+            <a href="pharmacy.html" class="category" data-category="pharmacy">
+                <img src="img/pharmacy.jpg" alt="Pharmacy" width="50" height="50">
+                <span>Pharmacy</span>
+            </a>
+            <a href="restaurants.html" class="category" data-category="restaurants">
+                <img src="img/restaurants.jpg" alt="Restaurants" width="50" height="50">
+                <span>Restaurants</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Trending prices section -->
+    <section class="trending-prices">
+        <h2>Trending Prices</h2>
+        <ul id="price-list">
+        </ul>
+    </section>
+
+    <!-- Recent updates section -->
+    <section class="recent-updates">
+        <h2>Recent Updates</h2>
+        <div class="updates-ticker">
+            <p>New price for Rice: UGX 4,000 | Cooking Oil now UGX 8,500 | Petrol price update: UGX 5,200</p>
+        </div>
+    </section>
+
+    <!-- Footer with links -->
+    <footer>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="reportPrice()">Report a Price</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
