@@ -1,7 +1,15 @@
 const content = document.getElementById('content');
 
 const routes = {
-    '/': '<h2>Home Page</h2><p>Welcome to our tech website!</p>',
+    '/': `
+        <div class="hero">
+            <h1>Your Go-To Source for Tech Tutorials & Reviews</h1>
+            <p>Unbiased, in-depth, and up-to-date.</p>
+            <a href="#/reviews" class="cta-button">Explore Now</a>
+        </div>
+        <h2>Featured Articles</h2>
+        <div class="grid" id="featured-grid"></div>
+    `,
     '/tutorials': '<h2>Tutorials</h2><div class="grid" id="tutorials-grid"></div>',
     '/reviews': '<h2>Reviews</h2><div class="grid" id="reviews-grid"></div>',
     '/comparisons': '<h2>Comparisons</h2><div class="grid" id="comparisons-grid"></div>',
@@ -39,7 +47,9 @@ function createArticleCard(article, category) {
 
 function router() {
     const path = window.location.hash.slice(1) || '/';
-    const [page, category, id] = path.split('/').slice(1);
+    let [page, category, id] = path.split('/').slice(1);
+    page = page || '/';
+
 
     if (page === 'article' && category && id) {
         const article = articles[category]?.find(a => a.id == id);
@@ -53,9 +63,17 @@ function router() {
             content.innerHTML = '<h2>Article not found</h2>';
         }
     } else {
-        const route = `/${page || ''}`;
+        const route = `/${page}`;
         content.innerHTML = routes[route] || '<h2>Page not found</h2>';
-        if (page === 'tutorials') {
+
+        if (page === '/') {
+            const featuredGrid = document.getElementById('featured-grid');
+            const featuredArticles = [articles.reviews[0], articles.tutorials[0], articles.comparisons[0]];
+            featuredGrid.innerHTML = featuredArticles.map(article => {
+                const category = Object.keys(articles).find(key => articles[key].includes(article));
+                return createArticleCard(article, category);
+            }).join('');
+        } else if (page === 'tutorials') {
             const grid = document.getElementById('tutorials-grid');
             grid.innerHTML = articles.tutorials.map(article => createArticleCard(article, 'tutorials')).join('');
         } else if (page === 'reviews') {
