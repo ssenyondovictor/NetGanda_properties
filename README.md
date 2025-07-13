@@ -1,41 +1,25 @@
-# GandaNet – Know the True Price
+# Tech Tutorials and Product Reviews Website
 
-## Overview
-GandaNet is a web application designed to help users find the average prices of common items, enabling them to avoid being overcharged. The platform provides a user-friendly interface where users can search for items, view trending prices, and stay updated on recent price changes.
+This is a single-page application built with React and Tailwind CSS, served from a single `index.html` file. It uses `HashRouter` for client-side routing, making it compatible with static hosting platforms like GitHub Pages.
 
-## Features
-- **Search Functionality**: Users can search for specific items to find their average prices.
-- **Category Icons**: Quick access to various categories such as Groceries, Fuel, Electronics, etc.
-- **Trending Prices Section**: Displays a list of common items along with their average prices.
-- **Recent Updates Section**: Keeps users informed about the latest price changes.
-- **Location Selector**: Allows users to select their location for more accurate pricing information.
-- **Responsive Design**: The website is designed to be mobile-friendly, ensuring a seamless experience across devices.
+## How to Run Locally
 
-## Project Structure
-```
-gandanet
-├── index.html        # Main HTML file for the GandaNet website
-├── css
-│   └── style.css     # Styles for the GandaNet website
-├── js
-│   └── script.js     # JavaScript for interactive elements
-└── README.md         # Documentation for the project
-```
+1.  **Prerequisites**: You need a modern web browser and a local web server. The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for Visual Studio Code is a great option.
 
-## Setup Instructions
-1. **Clone the Repository**: 
-   ```
-   git clone <repository-url>
-   ```
-2. **Navigate to the Project Directory**:
-   ```
-   cd gandanet
-   ```
-3. **Open `index.html` in a Web Browser**: 
-   Simply double-click the `index.html` file or open it with your preferred web browser.
+2.  **Steps**:
+    *   Clone or download this repository.
+    *   If you're using Visual Studio Code with the Live Server extension, right-click on the `index.html` file and select "Open with Live Server".
+    *   Otherwise, start your local web server and point it to the root directory of this project.
+    *   Open your web browser and navigate to the local URL provided by your server (e.g., `http://127.0.0.1:5500`).
 
-## Contributing
-Contributions are welcome! If you have suggestions for improvements or new features, please feel free to submit a pull request.
+## How to Deploy to GitHub Pages
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+1.  **Create a new repository** on GitHub.
+2.  **Push the code** to your new repository.
+3.  **Enable GitHub Pages** in your repository's settings:
+    *   Go to the "Pages" tab in your repository's settings.
+    *   Under "Build and deployment", select "Deploy from a branch" as the source.
+    *   Choose the `main` (or `master`) branch and the `/ (root)` folder, then click "Save".
+4.  **Update `sitemap.xml`**:
+    *   Open `sitemap.xml` and replace `https://your-username.github.io/your-repo-name/` with your actual GitHub Pages URL.
+5.  **Access your site**: Your website will be available at `https://your-username.github.io/your-repo-name/`. It might take a few minutes for the site to become live.
