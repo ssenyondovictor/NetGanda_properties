@@ -66,8 +66,8 @@ function createArticleCard(article, category) {
 
 function router() {
     const path = window.location.hash.slice(1) || '/';
-    let [page, category, id] = path.split('/').slice(1);
-    page = page || '/';
+    let [page, category, id] = path.split('/');
+    page = (page === '' || page === undefined) ? '/' : page;
 
 
     if (page === 'article' && category && id) {
