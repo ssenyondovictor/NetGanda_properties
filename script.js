@@ -9,10 +9,29 @@ const routes = {
         </div>
         <h2>Featured Articles</h2>
         <div class="grid" id="featured-grid"></div>
+        <div class="ad-placeholder">[Ad Placeholder - In-content]</div>
     `,
-    '/tutorials': '<h2>Tutorials</h2><div class="grid" id="tutorials-grid"></div>',
+    '/tutorials': '<h2>Tutorials</h2><div class="ad-placeholder">[Ad Placeholder - Top Banner]</div><div class="grid" id="tutorials-grid"></div>',
     '/reviews': '<h2>Reviews</h2><div class="grid" id="reviews-grid"></div>',
     '/comparisons': '<h2>Comparisons</h2><div class="grid" id="comparisons-grid"></div>',
+    '/about': `
+        <h2>About Us</h2>
+        <p>Welcome to TechSite, your number one source for all things tech. We're dedicated to giving you the very best of tutorials, reviews, and comparisons, with a focus on dependability, customer service and uniqueness.</p>
+    `,
+    '/contact': `
+        <h2>Contact Us</h2>
+        <p>If you have any questions or comments, please don't hesitate to contact us.</p>
+        <form>
+            <input type="text" placeholder="Name" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <textarea placeholder="Message" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    `,
+    '/privacy': `
+        <h2>Privacy Policy</h2>
+        <p>Your privacy is important to us. It is TechSite's policy to respect your privacy regarding any information we may collect from you across our website.</p>
+    `,
 };
 
 const articles = {
