@@ -82,7 +82,7 @@ function router() {
             content.innerHTML = '<h2>Article not found</h2>';
         }
     } else {
-        const route = `/${page}`;
+        const route = page === '/' ? '/' : `/${page}`;
         content.innerHTML = routes[route] || '<h2>Page not found</h2>';
 
         if (page === '/') {
