@@ -55,7 +55,7 @@ const articles = {
 function createArticleCard(article, category) {
     return `
         <div class="card">
-            <img src="https://source.unsplash.com/featured/?${category},tech,${article.id}" alt="${article.title}">
+            <img src="images/${category}-${article.id}.jpg" alt="${article.title}">
             <div class="card-content">
                 <h3>${article.title}</h3>
                 <a href="#/article/${category}/${article.id}">Read More</a>
@@ -75,7 +75,7 @@ function router() {
         if (article) {
             content.innerHTML = `
                 <h2>${article.title}</h2>
-                <img src="https://source.unsplash.com/featured/?${category},tech,${id}" alt="${article.title}" style="width:100%; height:auto; max-height:400px; object-fit:cover;">
+                <img src="images/${category}-${id}.jpg" alt="${article.title}" style="width:100%; height:auto; max-height:400px; object-fit:cover;">
                 <p>${article.content}</p>
             `;
         } else {
