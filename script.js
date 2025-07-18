@@ -41,7 +41,65 @@ const articles = {
         { id: 3, title: "Getting Started with Python", content: "A beginner-friendly introduction to the Python programming language. This tutorial covers the fundamental concepts, including variables, data types, and functions, to help you start your coding journey." },
     ],
     reviews: [
-        { id: 1, title: "Best Laptops 2025", content: "We've tested and reviewed the top laptops of 2025 to help you find the perfect device for your needs. Our in-depth analysis covers performance, design, battery life, and value for money." },
+        { id: 1, title: "Best Laptops 2025", content: `
+            <h3>🔝 1. <strong>Apple MacBook Air 13-inch (M4)</strong> — <em>Best Overall Laptop</em></h3>
+            <p><strong>Why we love it:</strong> Apple’s new M4 chip brings unmatched performance for daily use, multitasking, and even photo or video editing. With over 15 hours of battery life, a fanless design, and a brilliant Liquid Retina display, this is the go-to laptop for most people in 2025.</p>
+            <ul>
+                <li><strong>CPU:</strong> Apple M4</li>
+                <li><strong>RAM:</strong> 8GB (configurable up to 24GB)</li>
+                <li><strong>Storage:</strong> 256GB–2TB SSD</li>
+                <li><strong>Battery Life:</strong> Up to 18 hours</li>
+                <li><strong>Price:</strong> From $999</li>
+            </ul>
+            <p>✅ <strong>Pros:</strong> Lightweight, ultra-fast, long battery life<br>❌ <strong>Cons:</strong> Limited ports</p>
+            <hr>
+            <h3>🎮 2. <strong>ASUS ROG Zephyrus G16 (2025)</strong> — <em>Best for Gaming</em></h3>
+            <p>This powerhouse gaming laptop features a 14th Gen Intel CPU and RTX 4070 graphics. Despite its power, it's surprisingly slim and has a vibrant 240Hz display—perfect for competitive gamers.</p>
+            <ul>
+                <li><strong>CPU:</strong> Intel Core i9-14900H</li>
+                <li><strong>GPU:</strong> NVIDIA GeForce RTX 4070</li>
+                <li><strong>RAM:</strong> 32GB DDR5</li>
+                <li><strong>Storage:</strong> 1TB SSD</li>
+                <li><strong>Display:</strong> 16” QHD+ 240Hz</li>
+                <li><strong>Price:</strong> From $2,199</li>
+            </ul>
+            <p>✅ <strong>Pros:</strong> Top-tier gaming performance, stylish design<br>❌ <strong>Cons:</strong> Pricey, fans can get loud under load</p>
+            <hr>
+            <h3>💼 3. <strong>Dell XPS 14 (2025)</strong> — <em>Best for Business & Creatives</em></h3>
+            <p>A premium build and stunning OLED touchscreen make the XPS 14 a favorite for professionals. Great keyboard, port selection, and performance with Intel Core Ultra chips.</p>
+            <ul>
+                <li><strong>CPU:</strong> Intel Core Ultra 7 155H</li>
+                <li><strong>RAM:</strong> 16GB</li>
+                <li><strong>Storage:</strong> 512GB SSD</li>
+                <li><strong>Display:</strong> 14.5” 3.2K OLED</li>
+                <li><strong>Battery Life:</strong> ~13 hours</li>
+                <li><strong>Price:</strong> From $1,499</li>
+            </ul>
+            <p>✅ <strong>Pros:</strong> Gorgeous OLED screen, excellent keyboard<br>❌ <strong>Cons:</strong> Expensive upgrades</p>
+            <hr>
+            <h3>🎓 4. <strong>HP Pavilion Aero 13 (2025)</strong> — <em>Best Budget Laptop</em></h3>
+            <p>Lightweight, affordable, and capable—the Pavilion Aero continues to be a top pick for students and casual users on a budget.</p>
+            <ul>
+                <li><strong>CPU:</strong> AMD Ryzen 7 8840U</li>
+                <li><strong>RAM:</strong> 16GB</li>
+                <li><strong>Storage:</strong> 512GB SSD</li>
+                <li><strong>Weight:</strong> Just under 1kg</li>
+                <li><strong>Price:</strong> From $749</li>
+            </ul>
+            <p>✅ <strong>Pros:</strong> Very light, great battery, budget-friendly<br>❌ <strong>Cons:</strong> No touchscreen</p>
+            <hr>
+            <h3>🧠 Final Thoughts</h3>
+            <p>The best laptop in 2025 really depends on your needs:</p>
+            <ul>
+                <li><strong>Best overall:</strong> <em>MacBook Air M4</em></li>
+                <li><strong>Best gaming laptop:</strong> <em>ASUS ROG Zephyrus G16</em></li>
+                <li><strong>Best for work:</strong> <em>Dell XPS 14</em></li>
+                <li><strong>Best budget option:</strong> <em>HP Pavilion Aero 13</em></li>
+            </ul>
+            <p>Whatever you choose, the 2025 generation of laptops is faster, smarter, and longer-lasting than ever before.</p>
+            <hr>
+            <p>✅ Looking for more reviews or specific use cases (e.g., 2-in-1 laptops, Chromebooks, or Linux laptops)? Let us know in the comments below!</p>
+        ` },
         { id: 2, title: "iPhone 16 Review", content: "The iPhone 16 is here, and we've put it through its paces. Find out everything you need to know about its new features, camera improvements, and overall performance in our comprehensive review." },
         { id: 3, title: "Samsung Galaxy Tab S9 Review", content: "The Samsung Galaxy Tab S9 is a powerful and versatile tablet. In this review, we take a closer look at its stunning display, S Pen functionality, and productivity features." },
     ],
