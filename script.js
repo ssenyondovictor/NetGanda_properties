@@ -53,7 +53,12 @@ const articles = {
 };
 
 function createArticleCard(article, category) {
-    const imageName = article.title.toLowerCase().replace(/ /g, '-') + '.jpg';
+    let imageName = article.title.toLowerCase().replace(/ /g, '-') + '.jpg';
+    if (article.title === 'Best Laptops 2025') {
+        imageName = 'best-laptops-2025.webp';
+    } else if (article.title === 'How to Set Up a VPN') {
+        imageName = 'how-to-set-up-a-vpn.png';
+    }
     return `
         <div class="card">
             <img src="img/${imageName}" alt="${article.title}">
@@ -74,7 +79,12 @@ function router() {
     if (page === 'article' && category && id) {
         const article = articles[category]?.find(a => a.id == id);
         if (article) {
-            const imageName = article.title.toLowerCase().replace(/ /g, '-') + '.jpg';
+            let imageName = article.title.toLowerCase().replace(/ /g, '-') + '.jpg';
+            if (article.title === 'Best Laptops 2025') {
+                imageName = 'best-laptops-2025.webp';
+            } else if (article.title === 'How to Set Up a VPN') {
+                imageName = 'how-to-set-up-a-vpn.png';
+            }
             content.innerHTML = `
                 <h2>${article.title}</h2>
                 <img src="img/${imageName}" alt="${article.title}" style="width:100%; height:auto; max-height:400px; object-fit:cover;">
