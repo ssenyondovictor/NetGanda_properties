@@ -53,9 +53,10 @@ const articles = {
 };
 
 function createArticleCard(article, category) {
+    const imageName = article.title.toLowerCase().replace(/ /g, '-') + '.jpg';
     return `
         <div class="card">
-            <img src="images/${category}-${article.id}.jpg" alt="${article.title}">
+            <img src="img/${imageName}" alt="${article.title}">
             <div class="card-content">
                 <h3>${article.title}</h3>
                 <a href="#/article/${category}/${article.id}">Read More</a>
@@ -73,9 +74,10 @@ function router() {
     if (page === 'article' && category && id) {
         const article = articles[category]?.find(a => a.id == id);
         if (article) {
+            const imageName = article.title.toLowerCase().replace(/ /g, '-') + '.jpg';
             content.innerHTML = `
                 <h2>${article.title}</h2>
-                <img src="images/${category}-${id}.jpg" alt="${article.title}" style="width:100%; height:auto; max-height:400px; object-fit:cover;">
+                <img src="img/${imageName}" alt="${article.title}" style="width:100%; height:auto; max-height:400px; object-fit:cover;">
                 <p>${article.content}</p>
             `;
         } else {
