@@ -1,46 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Tutorials and Product Reviews</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKQD5C32HC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <title>DARK TUNNEL VPN — Next-Gen Android Tunneling Client (UDP Hysteria, Superdns, Xray)</title>
+    <meta name="description"
+        content="Secure, private, and unrestricted internet bypass client for Android. Supporting UDP Hysteria, Superdns (SlowDNS/DNSTT), and Xray obfuscation protocols.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://dark.gandas.uk/">
 
-      gtag('config', 'G-LKQD5C32HC');
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dark.gandas.uk/">
+    <meta property="og:title" content="DARK TUNNEL VPN — Next-Gen Android Tunneling Client">
+    <meta property="og:description"
+        content="Secure, private, and unrestricted internet bypass client for Android. Supporting UDP Hysteria, Superdns, and Xray obfuscation.">
+    <meta property="og:image" content="https://dark.gandas.uk/assets/icon.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dark.gandas.uk/">
+    <meta property="twitter:title" content="DARK TUNNEL VPN — Next-Gen Android Tunneling Client">
+    <meta property="twitter:description"
+        content="Secure, private, and unrestricted internet bypass client for Android. Supporting UDP Hysteria, Superdns, and Xray obfuscation.">
+    <meta property="twitter:image" content="https://dark.gandas.uk/assets/icon.webp">
+
+    <!-- Structured Data JSON-LD for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "DARK TUNNEL VPN",
+      "operatingSystem": "Android",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.victo.dt",
+      "description": "An advanced multi-protocol tunneling client for Android. Circumvent internet censorship, bypass firewalls, and optimize ping times using high-speed UDP Hysteria, Superdns, and obfuscated Xray cores."
+    }
     </script>
+
+    <!-- Google Search Console Ownership Verification Placeholder -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_TOKEN_HERE" /> -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="icon" href="assets/icon.webp" type="image/webp">
+    <link rel="stylesheet" href="styles.css?v=1.7">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">TechSite</div>
-            <ul class="nav-links">
-                <li><a href="#/">Home</a></li>
-                <li><a href="#/tutorials">Tutorials</a></li>
-                <li><a href="#/reviews">Reviews</a></li>
-                <li><a href="#/comparisons">Comparisons</a></li>
-                <li><a href="#/about">About</a></li>
-                <li><a href="#/contact">Contact</a></li>
-                <li><a href="#/privacy">Privacy Policy</a></li>
-            </ul>
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
+    <!-- Top Announcement/Community Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <span class="top-bar-text">Join DARK TUNNEL VPN Communities:</span>
+            <div class="top-bar-links">
+                <a href="https://t.me/DarkTunnelVpnForever" target="_blank" rel="noopener" class="top-bar-link">
+                    <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m22 2-7 20-4-9-9-4Z" />
+                        <path d="M22 2 11 13" />
+                    </svg>
+                    Telegram
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb7p1Or3AzNWtzublK1t" target="_blank" rel="noopener"
+                    class="top-bar-link">
+                    <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                    </svg>
+                    WhatsApp
+                </a>
             </div>
-        </nav>
+        </div>
+    </div>
+    <!-- Gradient background blobs for premium aesthetic -->
+    <div class="glow-bg-blob glow-left"></div>
+    <div class="glow-bg-blob glow-right"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo-group">
+                <img src="assets/icon.webp" alt="DARK TUNNEL VPN Logo" class="logo-img">
+                <span class="logo-text">DARK <span>TUNNEL</span> VPN</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#screenshots" class="nav-link">Screenshots</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#download" class="btn btn-primary">Download APK</a>
+            </div>
+        </div>
     </header>
-    <main id="content">
-        <!-- Content will be loaded here -->
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-new"><span>NEW RELEASE</span> Android 15+ Support</div>
+                    <h1 class="hero-title">Reclaim Your <span class="text-gradient">Digital Freedom</span> Anonymously
+                    </h1>
+                    <p class="hero-subtitle">
+                        An advanced multi-protocol tunneling client for Android. Circumvent internet censorship, bypass
+                        firewalls, and optimize ping times using high-speed UDP Hysteria, Superdns, and obfuscated Xray
+                        cores.
+                    </p>
+                    <div class="hero-actions-group">
+                        <a href="#download" class="btn btn-primary btn-large">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                            </svg>
+                            Get APK
+                        </a>
+                        <a href="https://t.me/DarkTunnelVpnForever" target="_blank" rel="noopener"
+                            class="btn btn-secondary btn-large">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m22 2-7 20-4-9-9-4Z" />
+                                <path d="M22 2 11 13" />
+                            </svg>
+                            Telegram
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029Vb7p1Or3AzNWtzublK1t" target="_blank" rel="noopener"
+                            class="btn btn-secondary btn-large">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-val">3+</span>
+                            <span class="stat-lbl">Core Protocols</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">100%</span>
+                            <span class="stat-lbl">Open Source</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">&lt;50ms</span>
+                            <span class="stat-lbl">Hysteria Ping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Screenshots Showcase -->
+                <div class="screenshots-showcase" id="screenshots">
+                    <div class="screenshot-phone phone-primary">
+                        <div class="phone-speaker"></div>
+                        <div class="phone-screen-img">
+                            <img src="assets/screenshot1.png" alt="DARK TUNNEL VPN Connected Interface">
+                        </div>
+                    </div>
+                    <div class="screenshot-phone phone-secondary">
+                        <div class="phone-speaker"></div>
+                        <div class="phone-screen-img">
+                            <img src="assets/screenshot2.png" alt="DARK TUNNEL VPN DNS Resolver Setup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Protocols Section -->
+        <section id="features" class="section features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Engineered for the <span class="text-gradient">Most Restrictive Network
+                            Blocks</span></h2>
+                    <p class="section-subtitle">
+                        Unlike standard VPN clients that fail under deep packet inspection (DPI), DARK TUNNEL VPN
+                        utilizes custom tunnels built for maximum stealth, penetration, and speed.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Protocol 1: UDP Hysteria -->
+                    <div class="feature-card">
+                        <div class="card-icon-wrapper color-cyan">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="card-icon">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">UDP Hysteria</h3>
+                        <p class="card-desc">
+                            Designed for networks with heavy packet loss and jitter. It optimizes your connection to provide maximum speeds and low ping times, bypassing local ISP throttling.
+                        </p>
+                        <div class="card-meta">
+                            <span class="meta-tag">High Speed</span>
+                            <span class="meta-tag">Anti-Throttling</span>
+                            <span class="meta-tag">Low Latency</span>
+                        </div>
+                    </div>
+
+                    <!-- Protocol 2: Superdns (SlowDNS/DNSTT) -->
+                    <div class="feature-card">
+                        <div class="card-icon-wrapper color-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="card-icon">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Superdns</h3>
+                        <p class="card-desc">
+                            The ultimate censorship bypass. Superdns routes your connection through secure DNS queries, allowing you to access blocked sites even on restricted networks.
+                        </p>
+                        <div class="card-meta">
+                            <span class="meta-tag">Slow DNS</span>
+                            <span class="meta-tag">DNS Tunnel</span>
+                            <span class="meta-tag">100% Stealth</span>
+                        </div>
+                    </div>
+
+                    <!-- Protocol 3: Xray Obfuscation Core -->
+                    <div class="feature-card">
+                        <div class="card-icon-wrapper color-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="card-icon">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 12h8M12 8v8" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Xray Core Support</h3>
+                        <p class="card-desc">
+                            Disguises your VPN traffic as standard, secure web browsing. This allows you to bypass strict firewalls and deep packet inspection in highly monitored environments.
+                        </p>
+                        <div class="card-meta">
+                            <span class="meta-tag">Stealth Mode</span>
+                            <span class="meta-tag">Secure TLS</span>
+                            <span class="meta-tag">Bypass Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- CTA Section -->
+        <section id="download" class="section cta-section">
+            <div class="cta-card">
+                <h2>Browse Without Limits Today</h2>
+                <p>Download the latest release of DARK TUNNEL VPN. Fast installation, zero registration, 3GB free
+                    high-speed bandwidth out of the box.</p>
+                <div class="cta-actions">
+                    <a href="https://play.google.com/store/apps/details?id=com.victo.dt" target="_blank" rel="noopener"
+                        class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M5 3.14v17.72c0 .48.16.88.46 1.18l.06.06L15.9 11.75v-.26L5.52 1.12l-.06.06c-.3.3-.46.7-.46 1.18zM18.8 8.86l-3.32-1.9-3.41 3.41 3.41 3.41 3.32-1.9c.95-.54 1.58-1.42 1.58-2.51s-.63-1.97-1.58-2.51zM5.9 21.68l9.46-5.41-2.9-2.9-6.56 8.31zM5.9 2.32l6.56 8.31 2.9-2.9L5.9 2.32z" />
+                        </svg>
+                        Get it on Google Play
+                    </a>
+                    <a href="https://t.me/DarkTunnelVpnForever" target="_blank" rel="noopener"
+                        class="btn btn-secondary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m22 2-7 20-4-9-9-4Z" />
+                            <path d="M22 2 11 13" />
+                        </svg>
+                        Telegram
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029Vb7p1Or3AzNWtzublK1t" target="_blank" rel="noopener"
+                        class="btn btn-secondary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2024 TechSite. All Rights Reserved.</p>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo-group">
+                    <img src="assets/icon.webp" alt="DARK TUNNEL VPN Logo" class="logo-img">
+                    <span class="logo-text">DARK <span>TUNNEL</span> VPN</span>
+                </a>
+                <p>An open-source multi-protocol VPN and bypass client for Android.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Navigation</h5>
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+            </div>
+
+            <div class="footer-links">
+                <h5>Community</h5>
+                <a href="https://t.me/DarkTunnelVpnForever" target="_blank" rel="noopener">Telegram Channel</a>
+                <a href="https://whatsapp.com/channel/0029Vb7p1Or3AzNWtzublK1t" target="_blank" rel="noopener">WhatsApp
+                    Channel</a>
+            </div>
+        </div>
+        <div class="container copyright-bar">
+            <span>&copy; 2026 DARK TUNNEL VPN Project. Released under GPL v3.0 license.</span>
+            <span>Made for digital freedom.</span>
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
 </body>
+
 </html>
